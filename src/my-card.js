@@ -8,45 +8,52 @@ class MyCard extends LitElement {
   }
 
   static styles = css`
-    :host {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      font-size: calc(10px + 2vmin);
-      color: #1a2b42;
-      max-width: 960px;
-      margin: 0 auto;
-      text-align: center;
-      background-color: var(--my-card-background-color);
-    }
+    .card {
+    max-width: 200px;
+    margin: 16px;
+    padding: 16px;
+    border: 2px solid #ccc;
+    background-color: #FF0000;
+    border-radius: 8px;
+    cursor: pointer;
+  
+}
 
-    main {
-      flex-grow: 1;
-    }
+.card-img {
+    width: 150px; 
+    margin-right: 12px;
+    border-radius: 8px;
+}
 
-    .logo {
-      margin-top: 36px;
-      animation: app-logo-spin infinite 20s linear;
+.card-content {
+    flex-grow: 1;
+}
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.card-description.hidden {
+    text-align: center;
+}
+.details-button {
+    display: Details;
+}
+.hotpink-bg{
+  background:hotpink;
+}
+.wrapper{}
+.highlighted{
+  background-color: hotpink;
+}
+@media screen and (max-width: 790px) {
+    .details-button {
+        display: none;
     }
-
-    @keyframes app-logo-spin {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    .app-footer {
-      font-size: calc(12px + 0.5vmin);
-      align-items: center;
-    }
-
-    .app-footer a {
-      margin-left: 5px;
+}
+    .card-img {
+        width: 75%;
+        height: auto;
     }
   `;
 
