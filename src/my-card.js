@@ -42,7 +42,7 @@ class MyCard extends LitElement {
 .hotpink-bg{
   background:hotpink;
 }
-.wrapper{}
+
 .highlighted{
   background-color: hotpink;
 }

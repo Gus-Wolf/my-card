@@ -6,17 +6,18 @@
             <h2 class="card-title">Lightning McQueen</h2>
             <p class="card-description">Ka-Choooww.</p>
             <a href="#" class="details-button">Details</a>
-             
+             <button class="color-toggle-button">Toggle Color</button>
+            <button class="change-title-button">Change Title</button>
         </div>
     </div>
     </div>
-    <button class="color-toggle-button">Toggle Color</button>
-    <button class="change-title-button">Change Title</button>
+    
   <button id="btn">Copy Card</button>
 <button id="deleteBtn">Delete Last Card</button>
 <script src="script.js"></script>
 <script>
-  function setupCardListeners(card){
+  // 
+function setupCardListeners(card){
   card.addEventListener("click", function(e){
     this.classList.toggle("highlighted");
   });
